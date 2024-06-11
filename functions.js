@@ -143,3 +143,15 @@ function fullName (person){
  function filterByAge(people, minAge){
     return people.map( el => el.age).filter(el => el >= minAge)
  }
+
+
+
+  /********************************
+ ****  Function Composition *****
+ ********************************/
+
+
+//Combining one or more functions 
+
+ const composedFunctions = compose(capitalize, reverse)
+ console.log(composedFunctions("hello"))
