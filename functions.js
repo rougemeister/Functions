@@ -59,3 +59,24 @@ function wordCount(str){
 }
 
 
+
+
+/********************************
+ **** Array Transformation *****
+ ********************************/
+
+
+ //Double array elements
+ function double(arr){
+
+    if(arr.length<1){
+        return 'Empty Array'
+    }else if (!Array.isArray(arr)){
+        return "Input not an array!"
+    }
+    
+    return arr.map(el => el * 2)
+ }
+
+
+
