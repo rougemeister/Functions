@@ -124,6 +124,18 @@ function fullName (person){
     if(typeof person !== 'object'){
         return 'Input an object into function'
     }
-    
+
     return `${person.firstName} ${person.lastName}`
  }
+
+
+ //A function to check if an object passes as an adult
+ function isAdult(person){
+    if(typeof person !== 'object'){
+        return 'Input an object into function'
+    }
+
+    return person.age > 17
+ }
+
+ 
