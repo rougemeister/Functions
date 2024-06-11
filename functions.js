@@ -25,5 +25,23 @@ function reverse(str){
     return newStr
 }
 
-console.log(reverse(8))
+
+
+// A function to check if a given string is a Palindrome 
+function isPalindrome(str) {
+
+    if(str === '') {
+        return 'Empty string'
+    }else if (typeof str !== 'string'){
+        return 'Input not a string!'
+    }
+
+    let newStr =''
+
+    for(let i = str.length - 1; i >= 0 ; i--) {
+        newStr += str[i]
+    }
+
+    return str === newStr;
+}
 
