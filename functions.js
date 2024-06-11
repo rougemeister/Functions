@@ -45,3 +45,17 @@ function isPalindrome(str) {
     return str === newStr;
 }
 
+
+
+//A function to count the words in a given string
+
+function wordCount(str){
+    if(str === '') {
+        return 0
+    }else if (typeof str !== 'string'){
+        return 'Input not a string!'
+    }
+    return str.split(' ').length;
+}
+
+
