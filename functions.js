@@ -88,3 +88,12 @@ function wordCount(str){
     return arr.filter(el => el % 2 === 0)
  }
 
+ //A function to sum all the array elements (numbers)
+
+ function sum(arr) {
+    
+    if (!Array.isArray(arr)){
+        return "Input not an array!"
+    }
+    return arr.reduce((a, b)=> a + b, 0)
+ }
