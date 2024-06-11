@@ -78,5 +78,13 @@ function wordCount(str){
     return arr.map(el => el * 2)
  }
 
-
+ //Filter Even numbers in a given array
+ function filterEven (arr){
+    if(arr.length<1){
+        return 'Empty Array'
+    }else if (!Array.isArray(arr)){
+        return "Input not an array!"
+    }
+    return arr.filter(el => el % 2 === 0)
+ }
 
