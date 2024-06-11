@@ -111,3 +111,19 @@ function wordCount(str){
  }
 
  console.log(average([1, 2]))
+
+
+
+ /********************************
+ **** Object Transformation *****
+ ********************************/
+
+//A function to return the fullname of a given object
+
+function fullName (person){
+    if(typeof person !== 'object'){
+        return 'Input an object into function'
+    }
+    
+    return `${person.firstName} ${person.lastName}`
+ }
