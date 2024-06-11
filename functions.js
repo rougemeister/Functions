@@ -138,4 +138,8 @@ function fullName (person){
     return person.age > 17
  }
 
- 
+
+  //A function to filter out objects minimum age in array
+ function filterByAge(people, minAge){
+    return people.map( el => el.age).filter(el => el >= minAge)
+ }
