@@ -141,8 +141,10 @@ function fullName (person){
 
   //A function to filter out objects minimum age in array
  function filterByAge(people, minAge){
-    return people.map( el => el.age).filter(el => el >= minAge)
+    return people.filter(el => el.age >= minAge)
  }
+
+ console.log(filterByAge([{name: 'Prince', age: 20}, {name: "Kwaku", age: 50}], 40))
 
 
 
