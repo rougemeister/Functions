@@ -153,5 +153,11 @@ function fullName (person){
 
 //Combining one or more functions 
 
- const composedFunctions = compose(capitalize, reverse)
- console.log(composedFunctions("hello"))
+function compose(...args){
+    return args[0](args[1](args[2]))
+}
+
+
+const composedFunctions = compose(reverse, capitalize, 'hello')
+
+ console.log(composedFunctions)
