@@ -3,6 +3,8 @@
  ********************************/
 
 
+
+
 // A function to Capitalizes the first letter of a string.
 function capitalize (str ) {
     if(typeof str !== 'string') return "Input not a string"
@@ -163,3 +165,19 @@ function compose(...args){
 const composedFunctions = compose(reverse, capitalize, 'hello')
 
  console.log(composedFunctions)
+
+
+ module.exports = {
+    capitalize,
+    reverse,
+    isPalindrome,
+    wordCount,
+    double,
+    filterEven,
+    sum,
+    average,
+    fullName,
+    isAdult,
+    filterByAge,
+    compose
+ }
