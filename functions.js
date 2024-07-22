@@ -6,10 +6,14 @@
 
 
 // A function to Capitalizes the first letter of a string.
-function capitalize (str ) {
-    if(typeof str !== 'string') return "Input not a string"
-    return str[0].toUpperCase() + str.slice(1);
+
+function capitalize(str) {
+    if (typeof str !== 'string' || str === null || str === undefined) return "Input not a string";
+    return str.length > 0 ? str[0].toUpperCase() + str.slice(1) : '';
 }
+
+
+capitalize('lol')
 
 
 // A function to reverse a given string
@@ -93,24 +97,25 @@ function wordCount(str){
  //A function to sum all the array elements (numbers)
 
  function sum(arr) {
-    if(!arr.every(el => typeof el === 'number')){
-        return 'All elements must be numbers'
-    } else if (!Array.isArray(arr)){
-        return "Input not an array!"
+    if (!Array.isArray(arr)) {
+        return "Input not an array!";
+    } else if (!arr.every(el => typeof el === 'number')) {
+        return 'All elements must be numbers';
     }
-    return arr.reduce((a, b)=> a + b, 0)
- }
+    return arr.reduce((a, b) => a + b, 0);
+}
 
 
   //A function to find the average of numbers in a given array
-  function average(arr){
-    if(!arr.every(el => typeof el === 'number')){
-        return 'All elements must be numbers'
-    } else if (!Array.isArray(arr)){
-        return "Input not an array!"
+ function average(arr) {
+    if (!Array.isArray(arr)) {
+        return "Input not an array!";
+    } else if (!arr.every(el => typeof el === 'number')) {
+        return 'All elements must be numbers';
     }
-    return arr.reduce((a, b)=> a + b, 0)/arr.length
- }
+    return arr.reduce((a, b) => a + b, 0) / arr.length;
+}
+
 
  console.log(average([1, 2]))
 
